@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: http://linux.jszsl.top/sitemap.xml
