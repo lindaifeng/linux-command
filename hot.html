@@ -48,7 +48,7 @@ var _hmt = _hmt || [];
           </ul>
           <input type="text" class="query" id="query" autocomplete="off" autofocus="autofocus" placeholder="Linux 命令搜索"/>
           <div class="enter-input">
-              <input type="hidden" id="current_path" value="/index.html">
+              <input type="hidden" id="current_path" value="/hot.html">
               <button id="search_btn">搜索</button>
           </div>
       </div>
@@ -1275,20 +1275,7 @@ var _hmt = _hmt || [];
   </span> 个Linux命令
 </div>
 <script type="text/javascript" src="js/dt.js?v=1703380035725"></script>
-<script type="text/javascript">
-// 覆盖root_path计算逻辑，确保搜索路径不包含/hot前缀
-Object.defineProperty(document, 'getElementById', {
-  configurable: true,
-  writable: true,
-  value: function(id) {
-    if (id === 'current_path') {
-      const mockElement = { value: '/' };
-      return mockElement;
-    }
-    return document.querySelector('#' + id);
-  }
-});
-</script>
+
 <script type="text/javascript" src="js/index.js?v=1703380035725"></script>
 <!-- <script src="https://giscus.app/client.js"
         data-repo="jszsl001/linux-command"
